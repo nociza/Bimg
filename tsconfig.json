@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "lib": [
+      "es2021"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "target": "es2021"
+  },
+  "paths": {
+      "@src/*": ["src/*"],
+  }, 
+  "types": [
+    // ... your other types
+    "node",
+    "jest"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "README.md"
+  ]
+}
