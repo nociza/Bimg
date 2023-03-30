@@ -36,3 +36,6 @@ The image file is a object of
   data: string   // base64 encoded image data from Buffer
 }
 ```
+
+### Examples
+See my simple expressjs server [here](https://github.com/nociza/bob/blob/main/src/routes/imgen.ts).
