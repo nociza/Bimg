@@ -1,5 +1,6 @@
 # Bimg
 [![NPM](https://img.shields.io/npm/v/bimg.svg)](https://www.npmjs.com/package/bimg)
+[![NPM Downloads][https://img.shields.io/npm/dm/bimg.svg]][https://npmjs.org/package/bimg]
 
 A npm package of reverse-engineered Bing Image Creator API. Courtesy of [Bing Image Search API](https://www.microsoft.com/cognitive-services/en-us/bing-image-search-api) and [EdgeGPT](https://github.com/acheong08/EdgeGPT) by [acheong08](https://github.com/acheong08).
 
