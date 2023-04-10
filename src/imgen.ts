@@ -88,6 +88,16 @@ const getImages = async (session: AxiosInstance, prompt: string) => {
     }
   }
 
+  if (imagesResponse.data.errorMessage === "Pending") {
+    throw new Error(
+      "This prompt has been blocked by Bing. Bing's system flagged this prompt because it may conflict with their content policy. More policy violations may lead to automatic suspension of your access."
+    );
+  } else if (imagesResponse.data.errorMessage) {
+    throw new Error(
+      "Bing returned an error: " + imagesResponse.data.errorMessage
+    );
+  }
+
   const imageLinks = imagesResponse.data
     .match(/src="([^"]+)"/g)
     .map((src: string) => src.slice(5, -1));
